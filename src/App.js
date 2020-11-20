@@ -19,13 +19,14 @@ function App() {
 
   const enterEmail=(e)=>{
     e.preventDefault()
+    const date =Date()
     if(ValidateEmail(emailval)){
       const opc = {
         method : 'POST',
         headers : {
             'Content-Type':'application/json'
         },
-        body : JSON.stringify({name:nameval,email:emailval,time:Date()})
+        body : JSON.stringify({name:nameval,email:emailval,time:date})
       }
     fetch('https://emailcolection.herokuapp.com/colectemail',opc)
     window.open("https://bit.ly/38PJgqh","_self");
