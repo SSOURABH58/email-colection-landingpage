@@ -1,6 +1,6 @@
 import './App.css';
 // import {useState} from 'react'
-import logo from './images/Ресурс-1.png'
+import logo from './../../images/Ресурс-1.png'
 require('dotenv').config()
 
 function App() {
