@@ -1,6 +1,7 @@
 import './App.css';
 // import {useState} from 'react'
 import logo from './images/Ресурс-1.png'
+import bg from './images/background-image.jpg'
 require('dotenv').config()
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
   //   }
   // }
   return (
-    <div className="App">
+    <div className="App" style={{backgroundImage: `url(${bg})`}}>
       <img className="logo" src={logo} alt=""/>
       {/* <h1 className="title">Are Your Letting Humanity Down ?</h1>
       <div className="videohold">
